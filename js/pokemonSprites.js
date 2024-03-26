@@ -77,8 +77,12 @@ export async function fetchPokemonList() {
 }
 // Stores the users selected Pokémon in local storage
 export function selectPokemon(pokemonIndex) {
-	console.log('this is not working', pokemonIndex);
-	localStorage.setItem('selectedPokemonIndex', JSON.stringify(pokemonIndex));
-	console.log('Selected Pokémon Index:', pokemonIndex);
-	window.location.href = '/battleScene/index.html';
+    console.log('this is not working', pokemonIndex);
+    localStorage.setItem('selectedPokemonIndex', JSON.stringify(pokemonIndex));
+    console.log('Selected Pokémon Index:', pokemonIndex);
+    if (window.location.include('pokemonSimulator')) {
+        window.location.href = '/pokemonSimulator/battleScene/index.html';
+    } else {
+        window.location.href = '/battleScene/index.html';
+    }
 }

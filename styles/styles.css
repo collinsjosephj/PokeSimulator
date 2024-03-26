@@ -1,5 +1,4 @@
 /** @format */
-
 .audio {
 	display: none;
 }
@@ -37,17 +36,6 @@ nav bar attributes referenced from W3Schools
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
-.nav-wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/* Center vertically */
-	margin: 0 auto;
-	padding: 0 15px;
-	flex-wrap: wrap;
-	/* Allow items to wrap */
-}
-
 .nav-content {
 	flex-wrap: wrap;
 	display: flex;
@@ -63,43 +51,34 @@ nav bar attributes referenced from W3Schools
 	/* Allow the title to grow to take available space */
 }
 @keyframes example {
-	0% {
-		color: rgb(37, 150, 190);
-	}
-	25% {
-		color: yellow;
-	}
-	50% {
-		color: red;
-	}
-	100% {
-		color: green;
-	}
+    0%   {color: rgb(37, 150, 190);}
+    25%  {color: yellow;}
+    50%  {color: red}
+    100% {color: green;}
 }
 .nav-title {
-	font-family: 'Press Start 2P';
-	text-decoration: none;
-	color: rgb(37, 150, 190);
-	text-shadow: black 5px;
-	font-weight: bold;
-	font-size: 1.5rem;
-	/* Adjust font size */
+    font-family: 'Press Start 2P';
+    text-decoration: none;
+    color: rgb(37, 150, 190);
+    animation-name: example;
+    animation-duration: 4s;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* Adjust font size */
 }
 
 .btn-floating {
-	background-image: url(img/ball.png);
-	background-size: contain;
-	background-position: center center;
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
-	color: white;
-	margin: 0;
-	padding: 0;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: url(img/ball.png) center / contain no-repeat;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 a.brand-logo {
@@ -113,21 +92,6 @@ a.brand-logo {
 	font-weight: bold;
 	color: rgba(0, 0, 0, 0.8);
 	border-radius: 5px;
-}
-
-.right {
-	justify-content: flex-end;
-	list-style-type: none;
-	display: flex;
-}
-
-.right li {
-	margin: 0 10px;
-}
-
-.right a {
-	color: #333;
-	text-decoration: none;
 }
 
 header {
@@ -155,13 +119,14 @@ header {
 }
 
 .pokemon-text {
-	display: block auto;
-	text-align: center;
-	animation: blinker 2s step-start infinite;
-	align-items: center;
-	color: #f6e652;
-	font-family: 'Pokemon Solid', sans-serif;
-	font-size: 5rem;
+    display: block auto;
+    text-align: center;
+    animation: blinker 2s step-start infinite;
+    align-items: center;
+    color: #F6E652;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 5rem;
 }
 
 @keyframes blinker {
@@ -171,6 +136,9 @@ header {
 }
 
 .page-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 	background-color: rgba(0, 0, 0, 0.25);
 	padding: 5px 0;
 	color: #fff;
