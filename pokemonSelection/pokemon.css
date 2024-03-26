@@ -3,7 +3,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	/* background-image: url(img/selectpage.jpg); */
+	background-color: #D9AFD9;
+	background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 	background-size: cover/contain;
 }
 
@@ -40,6 +41,8 @@ main > div {
 }
 span {
 	font-family: 'Freckle Face';
+	font-weight: bolder;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 /* Making the images responsive */
@@ -51,7 +54,8 @@ img {
 .titleDesc {
 	text-align: center;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1em;
+	font-family: 'Freckle Face';
 }
 
 .nav-content {
